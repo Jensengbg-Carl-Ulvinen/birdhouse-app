@@ -7,6 +7,18 @@
 </template>
 
 <style lang="scss">
+@import '/styles/base.sass';
+
+body {
+  background-color: $primary-background-colour;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-template-rows: repeat(5, 2fr);
+  grid-gap: 0px;
+  margin: 0px;
+
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
