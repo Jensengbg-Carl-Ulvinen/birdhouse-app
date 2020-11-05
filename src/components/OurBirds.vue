@@ -2,11 +2,11 @@
   <div class="wrapper">
     <header class="header">
     <h1>Meet our birds</h1>
-    <img id="menu" src="../assets/bars.png">
+    <img id="menu" src="../assets/bars.png" alt="hamburger menu">
     </header>
     <ul class="card-wrapper">
       <li>
-        <img id="macaw" src="../assets/macaw.jpg">
+        <img id="macaw" src="../assets/macaw.jpg" alt="picture of a macaw bird">
         Macaws are long-tailed, often colorful parrots. 
         <br>
         They are popular in aviculture or as companion parrots.
@@ -14,9 +14,20 @@
                 <source src="../assets/macaw-sound.wav" type="audio/wav">
             </audio>
        </li>
-      <li>Bird</li>
-      <li>Bird</li>
+      <li>
+        <img id="macaw" src="../assets/lorikeet.png" alt="picture of a lorikeet bird">
+        The rainbow lorikeet is a species of parrot found in Australia.
+        Its habitat is rainforest, coastal bush and woodland areas.
+      </li>
+      <li>
+        <img id="macaw" src="../assets/toucan.png" alt="picture of a toucan bird">
+        Toucans are members of the bird family Ramphastidae.
+        For the most part the toucans are forest species.
+      </li>
     </ul>
+    <footer>
+      <p>copyright Birdhouse 2020</p>
+    </footer>
   </div>
 </template>
 
@@ -31,6 +42,7 @@ export default {
 
 <style lang="scss">
 @import '../styles/base.sass';
+
 body{
   padding: 0;
   margin: 0;
