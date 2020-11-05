@@ -1,4 +1,5 @@
 <template>
+<div class="landing-container">
   <header>
       <section class="instant-acces-menu">
           <div class="menu-item"> </div>
@@ -15,6 +16,7 @@
       <article class="landing-card">
       </article>
   </main>
+</div>
 </template>
 
 <script>
@@ -26,6 +28,13 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/base.sass';
 
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    grid-row: 6/17;
+    grid-column: 2/7;
+}
+
 header {
     border: 1px solid black;
     grid-row: 5/8;
@@ -33,7 +42,7 @@ header {
     display: flex;
     flex-direction: row;
     background-color: $primary-card-colour;
-
+    height: 30%;
 }
 
 .instant-acces-menu {
@@ -70,18 +79,19 @@ main {
     grid-column: 2/7;
     background-color: $hamburger-colour;
     display: flex;
+    height: 70%;
 }
 
 .landing-card {
     border: 1px solid black;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1850px) {
     .park-showcase {
-        display: hide;
+        display: none;
     }
 
-    .instant-acces {
+    .instant-acces-menu {
         min-width: 100%;
     }
 }

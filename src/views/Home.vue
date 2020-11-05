@@ -49,7 +49,7 @@ header {
 }
 footer {
   border: 1px solid brown;
-  grid-row: 14/14;
+  grid-row: 19/21;
   grid-column: 1/8;
   background-color: $primary-footer-colour;
 }
