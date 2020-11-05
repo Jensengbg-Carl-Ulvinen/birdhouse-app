@@ -22,6 +22,6 @@ export default {
 @import '../styles/base.sass';
 
 body {
-  background-color: $primary-background-colour
+  background-color:  $primary-background-colour
 }
 </style>
