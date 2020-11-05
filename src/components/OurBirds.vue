@@ -10,7 +10,9 @@
         Macaws are long-tailed, often colorful parrots. 
         <br>
         They are popular in aviculture or as companion parrots.
-        <button class="btn">Sound</button>
+          <audio class="audio" controls>
+                <source src="../assets/macaw-sound.wav" type="audio/wav">
+            </audio>
        </li>
       <li>Bird</li>
       <li>Bird</li>
@@ -20,6 +22,10 @@
 
 <script>
 export default {
+  data: () => {
+    return{
+    }
+  }
 }
 </script>
 
@@ -53,8 +59,9 @@ ul{
     margin-right: 2rem;
 }
 li{
+  color: $btn-font-colour;
   padding: 3rem;
-  padding-bottom: 8rem;
+  padding-bottom: 10rem;
   border-radius: 3%;
   background: $primary-card-colour;
   width: 145px;
@@ -66,12 +73,9 @@ li{
     height: 100%;
     border-radius: 100%;
 }
-.btn{
-  border-style: none;
-  border-radius: 5px;
-  background-color: $btn-colour;
-  padding: 0.2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+audio{
+  margin-top: -30%;
+  width: 100%;
+  height: 100%;
 }
 </style>
