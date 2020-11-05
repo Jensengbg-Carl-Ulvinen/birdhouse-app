@@ -5,7 +5,8 @@
       <img class="logo" alt="birdhouse-logo" src="../assets/birdhouse.png">
     </figure>
     <Welcome msg="Welcome to Birdhouse"/>
-    <Landing/>
+    <LandingHeader/>
+    <LandingMain/>
     <footer></footer>
   </div>
 </template>
@@ -13,11 +14,12 @@
 <script>
 // @ is an alias to /src
 import '@/styles/base.sass'
-import landing from '@/components/Landing.vue'
+import landingHeader from '@/components/LandingComponentHeader.vue'
+import landingMain from '@/components/LandingContentMain.vue'
 
 export default {
   name: 'Home',
-  components: { Landing: landing, }
+  components: { LandingHeader: landingHeader, LandingMain: landingMain, }
 }
 </script>
 
@@ -25,7 +27,6 @@ export default {
 @import '../styles/base.sass';
 
 header {
-  border: 1px solid yellow;
   grid-column: 1/8;
   background-color: $primary-footer-colour;
 }
@@ -38,18 +39,20 @@ header {
 }
 
 .img-container {
-  grid-row: 2/5;
+  grid-row: 2/4;
   grid-column: 2/7;
   padding: 0px;
   margin: 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .logo {
   max-width: 100%;
 }
 footer {
-  border: 1px solid brown;
-  grid-row: 19/21;
+  grid-row: 11/12;
   grid-column: 1/8;
   background-color: $primary-footer-colour;
 }
