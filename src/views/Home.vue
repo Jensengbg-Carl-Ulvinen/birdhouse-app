@@ -52,7 +52,7 @@ header {
   max-width: 100%;
 }
 footer {
-  grid-row: 11/12;
+  grid-row: 12/13;
   grid-column: 1/8;
   background-color: $primary-footer-colour;
 }

@@ -31,8 +31,9 @@ export default {
     grid-row: 4/6;
     grid-column: 1/8;
     flex-direction: row;
-    background-color: $secondary-background-colour;
+    background-color: $primary-footer-colour;
     height: 100%;
+   
 }
 
 .instant-acces-menu {
@@ -48,7 +49,6 @@ export default {
     width: 70%;
     place-self: center;
     height: 80%;
-    max-width: 200px;
     border-radius: 5px;
     
 }
@@ -74,7 +74,7 @@ main {
     border: 1px solid black;
 }
 
-@media only screen and (max-width: 1850px) {
+@media only screen and (max-width: 700px) {
     .park-showcase {
         display: none;
     }
@@ -83,5 +83,18 @@ main {
         min-width: 100%;
     }
 }
+
+@media only screen and (min-width: 900px) {
+    .landing-container-header {
+    grid-column: 2/7;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .landing-container-header {
+    grid-row: 4/7;
+    }
+}
+
 
 </style>

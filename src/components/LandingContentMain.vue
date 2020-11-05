@@ -29,6 +29,9 @@ export default {
     background-color: $secondary-background-colour;
     overflow: auto;
   white-space: nowrap;
+  -webkit-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
+-moz-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
+box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
 }
 
 ul {
@@ -50,14 +53,39 @@ width: 200%;
     max-width: 300px;
 }
 
-@media only screen and (max-width: 1850px) {
-    .park-showcase {
-        display: none;
-    }
-
-    .instant-acces-menu {
-        min-width: 100%;
+@media only screen and (min-width: 750px) {
+    ul {
+        width: 100%;
     }
 }
+
+@media only screen and (min-width: 900px) {
+    .landing-container-main {
+    grid-column: 2/7;
+    }
+    ul {
+        width: 200%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    ul {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .landing-container-main {
+    grid-row: 7/12;
+    }
+
+    .landing-card {
+    width: 80%;
+    height: 70%;
+    max-width: 400px;
+}
+
+}
+
 
 </style>
