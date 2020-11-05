@@ -1,15 +1,13 @@
 <template>
 <div id="nav">
-
-
   <img alt="birdhouse-logo" src="@/assets/header-logo.png">
   <router-link to="/">Home</router-link>
   <router-link to="/about">About</router-link>
   <img id="burger-nav" src="@/assets/burger-menu-desktop.png">
-
 </div>
 
 <router-view />
+
 <div class="footer">
   <h3>copyright birdhouse 2020</h3>
   <img id="red-parrot-pic" src="@/assets/red-parrot.png">
@@ -17,9 +15,6 @@
 </template>
 
 <script>
-
-
-
 export default {
 
   // methods: {
@@ -93,5 +88,4 @@ body {
         color: #FDE07B;
     }
 }
-
 </style>

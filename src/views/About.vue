@@ -1,4 +1,5 @@
 <template>
+  <div class="home-wrapper">
 <div class="about">
 
   <h1>About</h1>
@@ -13,6 +14,7 @@
       We do our best to try to educate people about the importance of having these beautiful exotic animals alive.
     </div>
   </div>
+</div>
 
 </div>
 </template>
@@ -35,7 +37,7 @@ body {
 }
 h1 {
     color: $primary-title-colour;
-    font-size: 64px;
+    font-size: 35px;
 }
 
 .about {
@@ -46,7 +48,7 @@ h1 {
 
     .about-box {
         width: 1200px auto;
-        height: 546px;
+        height: 450px;
         background: $primary-footer-colour;
         color: $primary-bread-colour;
         border-radius: 39px;
@@ -58,10 +60,10 @@ h1 {
         align-items: center;
         text-align: flex-start!important;
         box-shadow: 9px 9px 4px 0 rgba(#000000, 0.48);
-        margin-bottom: 21rem;
+        margin-bottom: 11rem;
 
         #blue-parrot-pic {
-            margin-top: -35rem;
+            margin-top: -25rem;
             padding-bottom: 5rem;
         }
         .text-box {
@@ -77,6 +79,7 @@ h1 {
 }
 
 @media screen and (max-width:736px) {
+
     .text-box {
         font-size: 15px!important;
         height: auto!important;
@@ -86,6 +89,9 @@ h1 {
     }
     #blue-parrot-pic {
         display: none;
+    }
+    .home-wrapper{
+      height: 100vh;
     }
 
 }
