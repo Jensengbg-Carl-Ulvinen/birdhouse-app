@@ -23,12 +23,40 @@ export default {
 }
 </script>
 
+
 <style lang="scss">
 @import '../styles/base.sass';
 
 header {
   grid-column: 1/8;
   background-color: $primary-footer-colour;
+body {
+    background-color: $primary-background-colour;
+
+
+}
+
+.home {
+    padding-top: 6rem;
+    height: 70vh;
+
+    #birdhouse-logo {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:736px) {
+
+    .home {
+        padding-top: 6rem;
+        height: 100vh;
+
+        #birdhouse-logo {
+            height: 300px;
+        }
+    }
+
+
 }
 
 .home {
