@@ -9,10 +9,10 @@
 
 <router-view />
 
-<div class="footer">
+<!--<footer class="footer">
   <h3>copyright birdhouse 2020</h3>
   <img id="red-parrot-pic" src="@/assets/red-parrot.png">
-</div>
+</footer>-->
 
 </template>
 
@@ -51,7 +51,7 @@ body {
 
 #nav {
     height: auto;
-    padding: 1rem;
+    //padding: 1rem;
     background: $primary-header-background;
     display: flex;
     flex-direction: row;
@@ -80,7 +80,7 @@ body {
     align-items: flex-start;
     background: #26753C;
     width: 100%;
-    height: 100px;
+    //height: 100px;
 
     #red-parrot-pic {
         margin-top: -16rem;
