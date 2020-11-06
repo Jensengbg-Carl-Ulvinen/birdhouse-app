@@ -1,4 +1,5 @@
 <template>
+
 <div id="nav">
   <img alt="birdhouse-logo" src="@/assets/header-logo.png">
   <router-link to="/">Home</router-link>
@@ -12,6 +13,7 @@
   <h3>copyright birdhouse 2020</h3>
   <img id="red-parrot-pic" src="@/assets/red-parrot.png">
 </div>
+
 </template>
 
 <script>
@@ -32,7 +34,9 @@ export default {
 </script>
 
 <style lang="scss">
+
 @import '@/styles/base.sass';
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

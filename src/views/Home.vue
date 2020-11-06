@@ -7,22 +7,20 @@
 
 <script>
 // @ is an alias to /src
-import Welcome from '@/components/Welcome.vue'
 import '@/styles/base.sass'
 
 export default {
-  name: 'Home',
-  components: {
-    Welcome
-  }
+  name: 'Home'
 }
 </script>
+
 
 <style lang="scss">
 @import '../styles/base.sass';
 
 body {
     background-color: $primary-background-colour;
+
 
 }
 
@@ -45,6 +43,7 @@ body {
             height: 300px;
         }
     }
+
 
 }
 </style>
