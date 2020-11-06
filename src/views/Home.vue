@@ -56,4 +56,24 @@ footer {
   grid-column: 1/8;
   background-color: $primary-footer-colour;
 }
+
+@media only screen and (min-width: 700px) {
+  .logo {
+    grid-row: 14/16;
+    max-height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  footer {
+    grid-row: 14/16;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+ footer {
+   grid-row: 16/18;
+ }
+}
+
 </style>

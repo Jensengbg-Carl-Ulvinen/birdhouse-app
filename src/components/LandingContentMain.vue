@@ -28,10 +28,10 @@ export default {
     grid-column: 1/8;
     background-color: $secondary-background-colour;
     overflow: auto;
-  white-space: nowrap;
-  -webkit-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
--moz-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
+    white-space: nowrap;
+    -webkit-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
+    -moz-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
+    box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
 }
 
 ul {
@@ -41,7 +41,7 @@ ul {
    padding: 0px;
    justify-content: space-around;
    display: flex;
-width: 200%;
+    width: 200%;
 }
 
 .landing-card {
@@ -83,6 +83,16 @@ width: 200%;
     width: 80%;
     height: 70%;
     max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .landing-container-main {
+    grid-row: 9/15;
+    }
+
+    .landing-card {
+    
 }
 
 }

@@ -96,5 +96,15 @@ main {
     }
 }
 
+@media only screen and (min-width: 1700px) {
+    .landing-container-header {
+    grid-row: 5/9;
+    }
+
+    .landing-card {
+    
+}
+
+}
 
 </style>
