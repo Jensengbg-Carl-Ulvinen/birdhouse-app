@@ -70,20 +70,23 @@ img {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    align-self: start;
+    align-self: center;
   }
 
 
   .food {
-    grid-template-rows: repeat(3, 0.5fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    
   }
 
 
   .container {
-    grid-row: 2/4;
+    align-self: center;
     width: 20rem;
     height: 20rem;
+  
   }
 }
 
