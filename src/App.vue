@@ -8,7 +8,6 @@
 </div>
 
 <router-view />
-
 <div class="footer">
   <h3>copyright birdhouse 2020</h3>
   <img id="red-parrot-pic" src="@/assets/red-parrot.png">
