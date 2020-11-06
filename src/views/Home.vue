@@ -59,7 +59,6 @@ footer {
 
 @media only screen and (min-width: 700px) {
   .logo {
-    grid-row: 14/16;
     max-height: 300px;
   }
 }
@@ -74,6 +73,11 @@ footer {
  footer {
    grid-row: 16/18;
  }
+
+ .img-container {
+    grid-row: 2/5;
+   
+  }
 }
 
 </style>
