@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
-    <img alt="birdhouse-logo" src="../assets/birdhouse.png">
-    <Welcome msg="Welcome to Birdhouse"/>
-  </div>
+<div class="home">
+  <img alt="birdhouse-logo" id="birdhouse-logo" src="../assets/birdhouse.png">
+  <Welcome msg="Welcome to Birdhouse" />
+</div>
 </template>
 
 <script>
@@ -14,22 +14,36 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+
+<style lang="scss">
 @import '../styles/base.sass';
 
 body {
-  background-color: $primary-background-colour;
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  grid-template-rows: repeat(5, 2fr);
-  grid-gap: 0px;
-  margin: 0px;
+    background-color: $primary-background-colour;
+
 
 }
 
 .home {
-  display: grid;
-  grid-row: 2/3;
-  grid-column: 2/3;
+    padding-top: 6rem;
+    height: 70vh;
+
+    #birdhouse-logo {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width:736px) {
+
+    .home {
+        padding-top: 6rem;
+        height: 100vh;
+
+        #birdhouse-logo {
+            height: 300px;
+        }
+    }
+
+
 }
 </style>
