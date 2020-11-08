@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import OurBirds from '../components/OurBirds.vue'
+import OurBirds from '../views/OurBirds.vue'
 
 const routes = [
   {
