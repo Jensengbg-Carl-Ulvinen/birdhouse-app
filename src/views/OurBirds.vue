@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <header class="header">
-      <img class="logo-bird" src="../assets/logo.png">
+      <img class="logo-bird" src="../assets/logo.png" alt="birdhouse-logo">
     <h1 class="header-name">Meet our birds</h1>
     <img class="menu" src="../assets/Vector.png" alt="hamburger menu">
     </header>
