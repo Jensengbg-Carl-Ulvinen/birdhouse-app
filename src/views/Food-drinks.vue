@@ -55,7 +55,7 @@ h1 {
   grid-row: 2;
   display: grid;
   justify-content: center;
-  box-shadow: 0.625rem 0.625rem;
+  box-shadow: 0.4375rem 0.4375rem;
   border-radius: 1.5625rem;
   
   
