@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="landing-container-header">
       <section class="instant-acces-menu">
           <div class="menu-item"> </div>
           <div class="menu-item"> </div>
@@ -9,12 +9,12 @@
       <section class="park-showcase">
       </section>
   </header>
-  <main>
+  <!--<main>
       <article class="landing-card">
       </article>
       <article class="landing-card">
       </article>
-  </main>
+  </main>-->
 </template>
 
 <script>
@@ -26,32 +26,29 @@ export default {
 <style lang="scss" scoped>
 @import '../styles/base.sass';
 
-header {
-    border: 1px solid black;
-    grid-row: 5/8;
-    grid-column: 2/7;
+.landing-container-header {
     display: flex;
+    grid-row: 4/6;
+    grid-column: 1/8;
     flex-direction: row;
-    background-color: $primary-card-colour;
-
+    background-color: $primary-footer-colour;
+    height: 100%;
+   
 }
 
 .instant-acces-menu {
-    border: 1px solid blue;
     min-width: 50%;
     display: grid;
     grid-template-rows: repeat(2, 3fr);
     grid-template-columns: repeat(2, 3fr);
-    
+    height: 100%;
 }
 
 .menu-item {
     background-color: $secondary-card-colour;
-    width: 60%;
+    width: 70%;
     place-self: center;
     height: 80%;
-    max-width: 200px;
-    min-height: 150px;
     border-radius: 5px;
     
 }
@@ -70,20 +67,44 @@ main {
     grid-column: 2/7;
     background-color: $hamburger-colour;
     display: flex;
+    height: 70%;
 }
 
 .landing-card {
     border: 1px solid black;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 700px) {
     .park-showcase {
-        display: hide;
+        display: none;
     }
 
-    .instant-acces {
+    .instant-acces-menu {
         min-width: 100%;
     }
+}
+
+@media only screen and (min-width: 900px) {
+    .landing-container-header {
+    grid-column: 2/7;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .landing-container-header {
+    grid-row: 4/7;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .landing-container-header {
+    grid-row: 5/9;
+    }
+
+    .landing-card {
+    
+}
+
 }
 
 </style>
