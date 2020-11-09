@@ -44,6 +44,10 @@ h1 {
     font-size: 35px;
 }
 
+.home-wrapper{
+  height: 100vh;
+}
+
 .about {
     display: flex;
     justify-content: center;
