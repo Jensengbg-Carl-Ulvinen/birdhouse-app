@@ -1,17 +1,16 @@
 <template>
+  <HeaderMenu/>
   <div class="home">
     <!-- <header></header> -->
-    <figure class="img-container"> 
+    <figure class="img-container">
       <img class="logo" alt="birdhouse-logo" src="../assets/birdhouse.png">
     </figure>
     <Welcome msg="Welcome to Birdhouse"/>
-    <LandingHeader/>
-    <LandingMain/>
-    <footer class="footer">
-      <h3>copyright birdhouse 2020</h3>
-      <img id="red-parrot-pic" src="@/assets/red-parrot.png">
-    </footer>
+    <landingHeader/>
+    <landingMain/>
+
   </div>
+  <Footer/>
 </template>
 
 <script>
@@ -19,10 +18,12 @@
 import '@/styles/base.sass'
 import landingHeader from '@/components/LandingComponentHeader.vue'
 import landingMain from '@/components/LandingContentMain.vue'
+import HeaderMenu from '@/components/HeaderMenu.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'Home',
-  components: { LandingHeader: landingHeader, LandingMain: landingMain, }
+  components: { LandingHeader: landingHeader, LandingMain: landingMain, HeaderMenu, Footer }
 }
 </script>
 
@@ -93,7 +94,7 @@ footer {
 
   @media only screen and (max-width: 700px) {
     .logo {
-      
+
     }
   }
 
@@ -110,9 +111,9 @@ footer {
 
     .img-container {
         grid-row: 1/5;
-      
+
       }
-    
+
     .logo {
       max-height: 500px;
     }
