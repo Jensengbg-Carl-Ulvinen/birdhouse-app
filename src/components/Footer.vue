@@ -20,9 +20,8 @@ export default {
     justify-content: space-between;
     align-items: flex-start;
     background: #26753C;
-    margin-top: 0.3rem;
     width: 100%;
-    height: 100px;
+    height: 6rem;
 
     #red-parrot-pic {
         margin-top: -16rem;
