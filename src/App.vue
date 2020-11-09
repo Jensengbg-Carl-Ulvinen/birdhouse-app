@@ -1,35 +1,10 @@
 <template>
-
-<div id="nav">
-  <img alt="birdhouse-logo" src="@/assets/header-logo.png">
-  <router-link to="/">Home</router-link>
-  <router-link to="/about">About</router-link>
-  <img id="burger-nav" src="@/assets/burger-menu-desktop.png">
-</div>
-
 <router-view />
-
-<!--<footer class="footer">
-  <h3>copyright birdhouse 2020</h3>
-  <img id="red-parrot-pic" src="@/assets/red-parrot.png">
-</footer>-->
-
 </template>
 
 <script>
 export default {
 
-  // methods: {
-  //   goToAbout() {
-  //     this.$router.push({ path: 'About' });
-  //   },
-  //   goToOurBirds() {
-  //     this.$router.push({ path: 'ourbirds' });
-  //   },
-  //   goToHome() {
-  //     this.$router.push({ path: 'Home' });
-  //   }
-  // }
 }
 </script>
 
@@ -73,23 +48,4 @@ body {
     }
 }
 
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    background: #26753C;
-    width: 100%;
-    //height: 100px;
-
-    #red-parrot-pic {
-        margin-top: -16rem;
-    }
-
-    h3 {
-        padding-top: 1rem;
-        padding-left: 1rem;
-        color: #FDE07B;
-    }
-}
 </style>
