@@ -42,6 +42,7 @@ h1 {
   display: flex;
   align-self: center;
   justify-self: center;
+  text-shadow: 0.125rem 0.125rem 0.25rem #000000;
   
 }
 
@@ -73,6 +74,11 @@ img {
   width: 12.5rem;
   height: 12.5rem;
   margin-top: 1.25rem;
+  border-radius: 1rem;
+}
+
+h2 {
+  text-shadow: 0.125rem 0.125rem 0.25rem #000000;
 }
 
 
