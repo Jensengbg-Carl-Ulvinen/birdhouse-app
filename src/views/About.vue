@@ -19,7 +19,6 @@
 <Footer/>
 </template>
 
-
 <script>
 import HeaderMenu from '@/components/HeaderMenu.vue'
 import Footer from '@/components/Footer.vue'

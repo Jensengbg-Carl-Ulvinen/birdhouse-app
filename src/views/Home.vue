@@ -1,14 +1,12 @@
 <template>
   <HeaderMenu/>
   <div class="home">
-    <!-- <header></header> -->
     <figure class="img-container">
       <img class="logo" alt="birdhouse-logo" src="../assets/birdhouse.png">
     </figure>
     <Welcome msg="Welcome to Birdhouse"/>
     <landingHeader/>
     <landingMain/>
-
   </div>
   <Footer/>
 </template>
