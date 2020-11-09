@@ -10,6 +10,9 @@
   <div class="menu-item">
     <router-link to="/our-birds">Ourbirds</router-link>
   </div>
+  <div class="menu-item">
+    <router-link to="/food-drinks">Food and Drinks</router-link>
+  </div>
 </div>
 </template>
 
