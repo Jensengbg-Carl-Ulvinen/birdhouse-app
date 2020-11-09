@@ -1,6 +1,7 @@
 <template>
 <div id="nav">
   <img id="nav-logo" src="@/assets/header-logo.png">
+  <!-- <button @click="showMenu"><i class="material-icons menu" key="menu">menu</i></button> -->
   <Menu />
 </div>
 </template>
@@ -17,6 +18,35 @@ export default {
 
 <style lang="scss">
 @import '@/styles/base.sass';
+button{
+  background: transparent!important;
+  border: transparent !important;
+}
+
+.menu,
+.clear {
+  cursor: pointer;
+  font-size: 3em;
+  padding-left: 5%;
+  transition: all .3s ease;
+  width: 1.5em;
+}
+
+.menu {
+  color: $primary-title-colour;
+  &:hover,
+  &:active {
+    color: $btn-colour-hover;
+  }
+}
+
+.clear {
+  color: $btn-colour-hover;
+  &:hover,
+  &:active {
+    color: $primary-title-colour;
+  }
+}
 
 #nav {
     height: 100px;

@@ -1,60 +1,64 @@
 <template>
-<transition name="fade">
-  <i class="material-icons menu" v-if="!show" @click="show = !show" key="menu">menu</i>
-  <i class="material-icons clear" v-else onclick="show = !show" key="clear">clear</i>
-</transition>
-
-<transition name="fade">
-  <ul v-if="show">
-    <div class="menu-item">
-      <router-link to="/">Home</router-link>
-    </div>
-    <div class="menu-item">
-      <router-link to="/about">About</router-link>
-    </div>
-    <div class="menu-item">
-      <router-link to="/our-birds">Ourbirds</router-link>
-    </div>
-    <div class="menu-item">
-      <router-link to="/food-drinks">Food and Drinks</router-link>
-    </div>
-  </ul>
-</transition>
-
+  <section>
+      <nav>
+        <h1 @click="toHome">Home</h1>
+        <h1 @click="toAbout">About</h1>
+        <h1 @click="toOurBirds">Our Birds</h1>
+        <h1 @click="toFoodDrinks">Food and Drinks</h1>
+      </nav>
+    </section>
 </template>
 
 
 <script type="text/javascript">
+import { mapMutations } from "vuex";
 export default {
-  name: "Menu"
-}
+  name: "Menu",
+  methods: {
+    ...mapMutations(["showMenu"]),
+    toHome() {
+      this.showMenu();
+      const path = `/`;
+      if (this.$route.path !== path) this.$router.push("/");
+    },
+    toAbout() {
+      this.showMenu();
+      const path = `/about`;
+      if (this.$route.path !== path) this.$router.push("/about");
+    },
+    toOurBirds() {
+      this.showMenu();
+      const path = `/our-birds`;
+      if (this.$route.path !== path) this.$router.push("/our-birds");
+    },
+    toFoodDrinks() {
+      this.showMenu();
+      const path = `/food-drinks`;
+      if (this.$route.path !== path) this.$router.push("/food-drinks");
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import '@/styles/base.sass';
-.menu,
-.clear {
+
+nav{
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  background: transparent!important;
+  border: transparent !important;
+}
+
+h1{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 20px!important;
   cursor: pointer;
-  font-size: 3em;
-  padding-left: 5%;
-  transition: all .3s ease;
-  width: 1.5em;
 }
 
-.menu {
-  color: $primary-title-colour;
-  &:hover,
-  &:active {
-    color: $btn-colour-hover;
-  }
-}
-
-.clear {
-  color: $btn-colour-hover;
-  &:hover,
-  &:active {
-    color: $primary-title-colour;
-  }
-}
 </style>
