@@ -1,10 +1,7 @@
 <template>
+    <HeaderMenu />
   <div class="wrapper">
-    <header class="header">
-      <img class="logo-bird" src="../assets/logo.png" alt="birdhouse-logo">
-    <h1 class="header-name">Meet our birds</h1>
-    <img class="menu" src="../assets/Vector.png" alt="hamburger menu">
-    </header>
+        <h1>Our birds</h1>
     <ul class="card-wrapper">
       <li>
         <img id="macaw" src="../assets/macaw.jpg" alt="picture of a macaw bird">
@@ -32,14 +29,17 @@
             </audio>
       </li>
     </ul>
-    <footer>
-      <h3>copyright Birdhouse 2020</h3>
-    </footer>
   </div>
+   <Footer />
 </template>
 
 <script>
+import HeaderMenu from '@/components/HeaderMenu.vue'
+import Footer from '@/components/Footer.vue'
 export default {
+    components: {
+    HeaderMenu, Footer
+  },
   data: () => {
     return{
     }
@@ -60,19 +60,10 @@ body, html{
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr;
   gap: 0px 0px;
   justify-content: space-around;
-   grid-template-areas:
-    "header"
-    "ul"
-    "footer";
         min-height: 100vh;
-}
-.header{
-  display: grid;
-  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-  margin-bottom: 6rem;
 }
 .logo-bird{
     max-width: 25%; 
@@ -81,17 +72,14 @@ body, html{
 h1{
   color: $btn-font-colour;
   grid-column: 3 / 3;
+  grid-row: 1 / 1;
   text-shadow: 6px 6px 5px rgba(0, 0, 0, 0.25);
-}
-.menu{
-  grid-column: 5 /5;
-  padding-left: 9rem;
-  padding-top: 1.5rem;
 }
 ul{
   display: flex;
   justify-content:space-evenly;
     grid-column: 3 / 3;
+    grid-row: 2 / 2;
     list-style: none;
     margin-top: 1rem;
     margin-right: 2rem;
@@ -118,11 +106,6 @@ audio{
   width: 100%;
   height: 100%;
 }
-footer{
-  text-align: left;
-  color: $btn-font-colour;
-}
-
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
