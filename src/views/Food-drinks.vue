@@ -55,6 +55,8 @@ h1 {
   grid-row: 2;
   display: grid;
   justify-content: center;
+  box-shadow: 0.625rem 0.625rem;
+  border-radius: 1.5625rem;
   
   
   
@@ -63,6 +65,7 @@ h1 {
 .container:hover {
   opacity: 1;
   transform: scale(1.2);
+  
 
   }
 
