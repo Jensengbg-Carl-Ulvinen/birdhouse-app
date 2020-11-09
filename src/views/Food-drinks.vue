@@ -60,6 +60,8 @@ h1 {
   
 }
 
+.container:hover {opacity: 1}
+
 img {
   width: 12.5rem;
   height: 12.5rem;
@@ -89,5 +91,6 @@ img {
   
   }
 }
+
 
 </style>
