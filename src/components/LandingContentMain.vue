@@ -2,8 +2,17 @@
   <main class="landing-container-main">
       <ul>
       <article class="landing-card">
+          <h2> PRICING </h2>
+          <p class="price-listing"> Adult:  15£ <br> Kids: 10£ </p> 
+          <p class="landing-card-bread"> Family Package up to 4:<br> 50£
+               entrance cost.<br> Includes 1 free meal<br> for all members 
+            </p>
       </article>
       <article class="landing-card">
+          <h2> OPEN HOURS </h2>
+          <p class="landing-card-bread"> Mon - Wen: <br> 10 am - 4 pm </p>
+          <p class="landing-card-bread">
+          Weekend: <br> 10 am - 8 am </p>
       </article>
       </ul>
   </main>
@@ -34,6 +43,31 @@ export default {
     box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
 }
 
+h2 {
+    color: $primary-title-colour;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+p {
+    color: $primary-bread-colour;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.price-listing {
+    display: flex;
+    width: 90%;
+    margin: 0px;
+    text-align: start;
+}
+
+.landing-card-bread {
+    display: flex;
+    width: 90%;
+    text-align: start;
+}
+
 ul {
     height: 100%;
    grid-column: 1/-1;
@@ -49,8 +83,10 @@ ul {
     background-color: $primary-card-colour;
     width: 80%;
     height: 60%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     max-width: 300px;
+    align-items: center;
 }
 
 @media only screen and (min-width: 750px) {
