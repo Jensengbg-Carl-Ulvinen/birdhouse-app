@@ -60,7 +60,11 @@ h1 {
   
 }
 
-.container:hover {opacity: 1}
+.container:hover {
+  opacity: 1;
+  transform: scale(1.2);
+
+  }
 
 img {
   width: 12.5rem;

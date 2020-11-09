@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../styles/base.sass';
+@import '../styles/base.sass'
 
 .landing-container-header 
     display: flex
