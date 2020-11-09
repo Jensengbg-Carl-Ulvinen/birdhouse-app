@@ -75,6 +75,7 @@ img {
   height: 12.5rem;
   margin-top: 1.25rem;
   border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem;
 }
 
 h2 {
