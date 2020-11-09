@@ -1,4 +1,5 @@
 <template>
+
   <div class="home-wrapper">
 <div class="about">
 
@@ -12,6 +13,7 @@
       <br>
       Our foundattion helps keeping near extinct parrots from vanishing.
       We do our best to try to educate people about the importance of having these beautiful exotic animals alive.
+
     </div>
   </div>
 </div>
@@ -33,6 +35,7 @@ export default {
 @import '../styles/base.sass';
 
 body {
+
     background-color: $primary-background-colour;
 }
 h1 {
