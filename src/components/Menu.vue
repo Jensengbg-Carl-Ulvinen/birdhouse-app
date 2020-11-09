@@ -37,9 +37,10 @@ export default {
     margin-right: 1rem;
     height: 30px;
     cursor: pointer;
-}
-
-.overlay-menu {
     display: none;
 }
+
+// .overlay-menu {
+//     display: none;
+// }
 </style>
