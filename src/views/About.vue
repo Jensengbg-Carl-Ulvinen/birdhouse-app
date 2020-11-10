@@ -39,9 +39,10 @@ export default {
 @import '../styles/base.sass';
 
 .home-wrapper {
-    margin-top: 4rem;
-    height: 100vh;
-    margin-bottom: -10rem;
+  display: grid;
+  grid-gap: .25rem;
+  grid-template-rows: repeat(1,1fr);
+  justify-content: space-around;
     h1 {
         color: $primary-title-colour;
         font-size: 35px!important;
@@ -53,6 +54,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 6rem;
     .about-box {
         width: 1200px auto;
         height: 450px;
