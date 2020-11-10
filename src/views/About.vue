@@ -6,17 +6,19 @@
     <div class="about-box">
       <img id="blue-parrot-pic" src="@/assets/blue-parrot.png">
       <div class="text-box">
-        Birdhouse is a ZOO with all kind of fun activities. Do you like bird watching? We got you covered!
-        come watch our exotic parrots. Feeling hungry? Well, we got you covered there to.
-        <br>
-        <br>
-        Our foundattion helps keeping near extinct parrots from vanishing.
-        We do our best to try to educate people about the importance of having these beautiful exotic animals alive.
+        <h2>
+          Birdhouse is a ZOO with all kind of fun activities. Do you like bird watching? We got you covered!
+          come watch our exotic parrots. Feeling hungry? Well, we got you covered there to.
+          <br>
+          <br>
+          Our foundattion helps keeping near extinct parrots from vanishing.
+          We do our best to try to educate people about the importance of having these beautiful exotic animals alive.
+        </h2>
       </div>
     </div>
   </div>
 </div>
-<Footer/>
+<Footer />
 </template>
 
 <script>
@@ -27,7 +29,8 @@ import '@/styles/base.sass'
 export default {
   name: 'About',
   components: {
-    HeaderMenu, Footer
+    HeaderMenu,
+    Footer
   }
 }
 </script>
@@ -35,17 +38,14 @@ export default {
 <style lang="scss">
 @import '../styles/base.sass';
 
-body {
-
-    background-color: $primary-background-colour;
-}
-h1 {
-    color: $primary-title-colour;
-    font-size: 35px;
-}
-
-.home-wrapper{
-  height: 100vh;
+.home-wrapper {
+    margin-top: 4rem;
+    height: 100vh;
+    margin-bottom: -10rem;
+    h1 {
+        color: $primary-title-colour;
+        font-size: 35px;
+    }
 }
 
 .about {
@@ -53,7 +53,6 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
     .about-box {
         width: 1200px auto;
         height: 450px;
@@ -68,28 +67,24 @@ h1 {
         align-items: center;
         text-align: flex-start!important;
         box-shadow: 9px 9px 4px 0 rgba(#000000, 0.48);
-        margin-bottom: 11rem;
-
         #blue-parrot-pic {
             margin-top: -25rem;
             padding-bottom: 5rem;
         }
         .text-box {
             display: flex;
-            width: auto;
-            justify-content: flex-start!important;
-            font-size: 35px;
-            font-weight: bold;
             text-align: flex-start!important;
-
-        };
+            justify-content: flex-start!important;
+            width: auto;
+            font-size: 19px;
+            font-weight: bold;
+        }
     }
 }
 
 @media screen and (max-width:736px) {
-
     .text-box {
-        font-size: 15px!important;
+        font-size: 14px!important;
         height: auto!important;
     }
     .about-box {
@@ -101,6 +96,5 @@ h1 {
     .home-wrapper {
         height: 100vh;
     }
-
 }
 </style>

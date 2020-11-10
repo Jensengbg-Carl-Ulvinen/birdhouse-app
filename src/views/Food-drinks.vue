@@ -39,7 +39,7 @@ export default {
   grid-gap: 1.25rem;
   grid-template-rows: repeat(3,1fr);
   justify-content: space-around;
-  
+
 }
 
 h1 {
@@ -48,7 +48,7 @@ h1 {
   align-self: center;
   justify-self: center;
   text-shadow: 0.125rem 0.125rem 0.25rem #000000;
-  
+
 }
 
 
@@ -63,15 +63,15 @@ h1 {
   justify-content: center;
   box-shadow: 0.4375rem 0.4375rem;
   border-radius: 1.5625rem;
-  
-  
-  
+
+
+
 }
 
 .container:hover {
   opacity: 1;
   transform: scale(1.2);
-  
+
 
   }
 
@@ -99,7 +99,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
   }
 
 
@@ -107,7 +107,7 @@ h2 {
     align-self: center;
     width: 20rem;
     height: 20rem;
-  
+
   }
 }
 

@@ -1,11 +1,11 @@
 <template>
     <HeaderMenu />
-  <div class="wrapper">
+  <div class="ourbirds">
         <h1>Our birds</h1>
-    <ul class="card-wrapper">
+    <ul class="card-our-birds">
       <li>
         <img id="macaw" src="../assets/macaw.jpg" alt="picture of a macaw bird">
-        Macaws are long-tailed, often colorful parrots. 
+        Macaws are long-tailed, often colorful parrots.
         <br>
         They are popular in aviculture or as companion parrots.
           <audio class="audio" controls>
@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../styles/base.sass';
 
 body, html{
@@ -57,7 +57,7 @@ body, html{
       min-height: 100vh;
 
 }
-.wrapper {
+.ourbirds {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.5fr;
@@ -66,7 +66,7 @@ body, html{
         min-height: 100vh;
 }
 .logo-bird{
-    max-width: 25%; 
+    max-width: 25%;
     height: auto;
 }
 h1{
@@ -106,12 +106,12 @@ audio{
   width: 100%;
   height: 100%;
 }
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .wrapper{
-  grid-template-columns: 1fr;
+    .ourbirds{
+  // grid-template-columns: 1fr;
   grid-template-rows: 0.5fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -124,14 +124,22 @@ audio{
     margin-bottom: 20rem;
     font-size: 10px;
   }
-.card-wrapper{
+.card-our-birds{
   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  flex-direction: column;
+  z-index: -1;
+  li{
+    margin: 1rem;
+  }
 }
 }
 @media only screen and (min-width: 1200px){
-
+li:hover{
+   -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:all 0.5s ease;
+}
 }
 @media screen and (min-width: 1400px){
  .header{
