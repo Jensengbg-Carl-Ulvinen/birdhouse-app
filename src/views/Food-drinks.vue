@@ -1,4 +1,5 @@
 <template>
+<HeaderMenu/>
 <div class="food">
   <h1>Food and Drinks</h1>
   <div class="container">
@@ -14,14 +15,18 @@
 <h2>ICE CREAM</h2>
   </div>
 </div>
+<Footer/>
 
 </template>
 
 <script>
+import HeaderMenu from '@/components/HeaderMenu.vue'
+import Footer from '@/components/Footer.vue'
 export default {
     name: 'FoodDrinks',
-
-
+    components: {
+      HeaderMenu, Footer
+    }
 }
 </script>
 
