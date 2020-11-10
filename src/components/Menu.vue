@@ -14,6 +14,14 @@
 import { mapMutations } from "vuex";
 export default {
   name: "Menu",
+  state: {
+    showMenu: false
+  },
+  mutations: {
+    showMenu(state) {
+      state.showMenu = !state.showMenu;
+    }
+  },
   methods: {
     ...mapMutations(["showMenu"]),
     toHome() {
