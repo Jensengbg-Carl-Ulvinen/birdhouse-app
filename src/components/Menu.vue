@@ -1,42 +1,18 @@
 <template>
   <section>
       <nav>
-        <h1 @click="toHome">Home</h1>
-        <h1 @click="toAbout">About</h1>
-        <h1 @click="toOurBirds">Our Birds</h1>
-        <h1 @click="toFoodDrinks">Food and Drinks</h1>
+        <h1 class="menu-item"><router-link to="/">Home</router-link></h1>
+        <h1 class="menu-item"><router-link to="/about">About</router-link></h1>
+        <h1 class="menu-item"><router-link to="/our-birds">Ourbirds</router-link></h1>
+        <h1 class="menu-item"><router-link to="/food-drinks">Food and drinks</router-link></h1>
       </nav>
     </section>
 </template>
 
 
-<script type="text/javascript">
-import { mapMutations } from "vuex";
+<script>
 export default {
-  name: "Menu",
-  methods: {
-    ...mapMutations(["showMenu"]),
-    toHome() {
-      this.showMenu();
-      const path = `/`;
-      if (this.$route.path !== path) this.$router.push("/");
-    },
-    toAbout() {
-      this.showMenu();
-      const path = `/about`;
-      if (this.$route.path !== path) this.$router.push("/about");
-    },
-    toOurBirds() {
-      this.showMenu();
-      const path = `/our-birds`;
-      if (this.$route.path !== path) this.$router.push("/our-birds");
-    },
-    toFoodDrinks() {
-      this.showMenu();
-      const path = `/food-drinks`;
-      if (this.$route.path !== path) this.$router.push("/food-drinks");
-    }
-  }
+  name: "Menu"
 };
 </script>
 
@@ -44,10 +20,6 @@ export default {
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import '@/styles/base.sass';
 
-nav{
-  display: flex;
-  flex-direction: row;
-}
 
 button {
   background: transparent!important;
@@ -59,6 +31,11 @@ h1{
   padding-right: 1rem;
   font-size: 20px!important;
   cursor: pointer;
+  color: $primary-title-colour;
+}
+
+a{
+  color: $primary-title-colour;
 }
 
 </style>
