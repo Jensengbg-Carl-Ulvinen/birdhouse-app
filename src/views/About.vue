@@ -44,7 +44,7 @@ export default {
     margin-bottom: -10rem;
     h1 {
         color: $primary-title-colour;
-        font-size: 35px;
+        font-size: 35px!important;
     }
 }
 
