@@ -1,46 +1,41 @@
 <template>
-<img id="burger-nav" src="@/assets/burger-menu-desktop.png" v-on:click="onMenu()">
-<div class="overlay-menu" v-on:click="offMenu()">
-  <div class="menu-item">
-    <router-link to="/">Home</router-link>
-  </div>
-  <div class="menu-item">
-    <router-link to="/about">About</router-link>
-  </div>
-  <div class="menu-item">
-    <router-link to="/our-birds">Ourbirds</router-link>
-  </div>
-</div>
+  <section>
+      <nav>
+        <h1 class="menu-item"><router-link to="/">Home</router-link></h1>
+        <h1 class="menu-item"><router-link to="/about">About</router-link></h1>
+        <h1 class="menu-item"><router-link to="/our-birds">Ourbirds</router-link></h1>
+        <h1 class="menu-item"><router-link to="/food-drinks">Food and drinks</router-link></h1>
+      </nav>
+    </section>
 </template>
 
 
-<script type="text/javascript">
+<script>
 export default {
-  name: "Menu",
-  methods: {
-    onMenu: function() {
-      document.getElementById("overlay-menu").style.display = "block";
-    },
-    offMenu: function() {
-      document.getElementById("overlay-menu").style.display = "none";
-    }
-  }
-
-}
+  name: "Menu"
+};
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/base.sass';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '@/styles/base.sass';
 
-#burger-nav {
-    padding-top: 1rem;
-    margin-right: 1rem;
-    height: 30px;
-    cursor: pointer;
-    display: none;
+
+button {
+  background: transparent!important;
+  border: transparent !important;
 }
 
-// .overlay-menu {
-//     display: none;
-// }
+h1{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 20px!important;
+  cursor: pointer;
+  color: $primary-title-colour;
+}
+
+a{
+  color: $primary-title-colour;
+}
+
 </style>

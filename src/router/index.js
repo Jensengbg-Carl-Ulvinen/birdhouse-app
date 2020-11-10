@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-
 import FoodDrinks from '../views/Food-drinks.vue'
 import OurBirds from '../views/OurBirds.vue'
 
