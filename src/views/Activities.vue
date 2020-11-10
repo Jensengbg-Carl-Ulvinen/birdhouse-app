@@ -32,11 +32,10 @@ export default {
 @import '../styles/base.sass';
 
 .activities-cards{
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-gap: .25rem;
+  grid-template-rows: repeat(4,1fr);
+  justify-content: space-around;
   color: $primary-title-colour;
   .activitiy-card-row{
     display: flex;
@@ -55,6 +54,11 @@ export default {
 
   .activities-cards{
     margin-top: 7rem;
+    height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
 
   .activitiy-card-row{
