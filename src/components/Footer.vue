@@ -42,6 +42,9 @@ export default {
 
   .footer{
     margin-top: 15rem!important;
+    #red-parrot-pic {
+        display: none;
+    }
   }
 
 
