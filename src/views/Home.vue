@@ -83,17 +83,18 @@ body {
 .logo {
   max-width: 100%;
   max-height: 300px;
+  
 }
 
 footer {
-  grid-row: 12/13;
+  grid-row: 15/16;
   grid-column: 1/8;
   background-color: $primary-footer-colour;
 }
 
-  @media only screen and (max-width: 700px) {
-    .logo {
-      
+  @media only screen and (min-width: 700px) {
+    footer {
+      grid-row: 12/13;
     }
   }
 
@@ -105,7 +106,7 @@ footer {
 
   @media only screen and (min-width: 1700px) {
     footer {
-      grid-row: 16/18;
+      grid-row: 17/18;
     }
 
     .img-container {

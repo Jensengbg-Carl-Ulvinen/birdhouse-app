@@ -5,40 +5,40 @@
                 <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/parrot.svg"> 
                 </figure> 
-                <button class="menu-item-button"> BIRDS </button> 
+                <button class="menu-item-button"> <router-link to="/our-birds"> <h3> BIRDS </h3> </router-link> </button> 
             </div>
           <div class="menu-item">
               <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/wheel.svg"> 
                 </figure> 
-                <button class="menu-item-button"> PARKS </button> 
+                <button class="menu-item-button"> <router-link to=""> <h3> PARKS </h3> </router-link> </button> 
                </div>
           <div class="menu-item"> 
               <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/food.svg"> 
                 </figure> 
-                <button class="menu-item-button"> DINING </button> 
+                <button class="menu-item-button"> <router-link to="/food-drinks"> <h3> DINING </h3> </router-link> </button> 
           </div>
           <div class="menu-item"> 
               <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/info.svg"> 
                 </figure> 
-                <button class="menu-item-button"> INFO </button> 
+                <button class="menu-item-button"> <router-link to="/about"> <h3> ABOUT </h3> </router-link> </button> 
           </div>
       </section>
       <section class="park-showcase">
-            <figure class="park-showcase-container"> 
+            <!-- <figure class="park-showcase-container"> -->
                 <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle1.jpg"> 
-            </figure> 
-            <figure class="park-showcase-container"> 
+            <!-- </figure>
+            <figure class="park-showcase-container"> -->
                 <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle2.jpg"> 
-            </figure> 
-            <figure class="park-showcase-container"> 
+            <!-- </figure> 
+            <figure class="park-showcase-container"> -->
                 <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle3.jpg"> 
-            </figure> 
-            <figure class="park-showcase-container"> 
+            <!-- </figure> 
+            <figure class="park-showcase-container"> -->
                 <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle4.jpg"> 
-            </figure> 
+            <!-- </figure> -->
       </section>
   </header>
   <!--<main>
@@ -60,18 +60,21 @@ export default {
 
 .landing-container-header 
     display: flex
-    grid-row: 4/6
+    grid-row: 4/9
     grid-column: 1/8
-    flex-direction: row
+    flex-direction: column
     background-color: $primary-footer-colour
     height: 100%
+    z-index: 1
 
 .instant-acces-menu 
-    min-width: 50%
+    //min-width: 50%
     display: grid
     grid-template-rows: repeat(2, 3fr)
     grid-template-columns: repeat(2, 3fr)
-    height: 100%
+    //height: 100%
+    min-width: 100%
+    height: 50%
 
 
 .menu-item 
@@ -87,7 +90,7 @@ export default {
     transition: 0.3s;
 
 .menu-item:hover, menu-item:active 
-    transform: scale(1.1);
+    //transform: scale(1.1);
     
 .menu-item-icon 
     margin: 0px
@@ -99,7 +102,36 @@ export default {
     border: 0px
     background-color: $btn-colour
     color: $btn-font-colour
+    padding: 0px
+    border-radius: 2px
+
+a
+    display: flex
+    text-decoration: none
+    color: $btn-font-colour
+    margin: 0px
+    padding: 0px
+    width: 100%
+    height: 100%
+    text-align: center
+    justify-content: center
+    align-items: center
+    font-weight: 900
     font-size: 24px
+    font-weight: 900
+
+a:hover, active
+    color: $btn-colour
+
+h3
+   border: 0px
+   margin: 0px
+   padding: 0px 
+   width: 100%
+   text-align: center
+   text-decoration: none
+   font-size: 24px
+   font-weight: 900
 
 .menu-item-button:hover, active
     cursor: pointer
@@ -108,22 +140,26 @@ export default {
     background-color: $btn-font-colour
     color: $btn-colour
 
-
 .park-showcase 
-    width: 50%
+    //width: 50%
     display: grid
     grid-template-rows: repeat(2, 3fr)
     grid-template-columns: repeat(2, 3fr)
+    height: 50%
+    min-width: 100%
 
 .park-showcase-container
-    object-fit: contain;
-    padding: 0px;
-    margin: 0px;
+    object-fit: contain
+    padding: 0px
+    margin: 0px
 
 .park-picture
     width: 100%
     height: 100%
     object-fit: cover
+    max-width: 100%
+    max-height: 100vh
+    margin: auto
 
 main 
     border: 1px solid red
@@ -138,28 +174,54 @@ main
     border: 1px solid black
 
 
-@media only screen and (max-width: 700px) 
+@media only screen and (min-width: 700px) 
+    .landing-container-header 
+        flex-direction: row
+        grid-row: 4/6
+
     .park-showcase 
-        display: none
+        display: 
+
     .instant-acces-menu 
-        min-width: 100%
+        min-width: 50%
+        height: 100%
+
+    .park-showcase
+        height: 100%
+        min-width: 50%
     
 @media only screen and (min-width: 900px) 
     .landing-container-header 
         grid-column: 2/7
     
+    
+    
 @media only screen and (min-width: 1200px) 
     .landing-container-header 
         grid-row: 4/7
+
+    .menu-item-button
+        height: 4rem
+
+    .icon 
+        height: 5rem
+        width: 5rem
+
+@media only screen and (min-width: 1500px) 
+     h3
+        font-size: 36px
     
 
 @media only screen and (min-width: 1700px) 
     .landing-container-header 
         grid-row: 5/9
-    .landing-card 
+
+    .icon
+        width: 7rem
+        height: 7rem
+
+    .menu-item-button
+        font-size: 36px
     
-
-
-
 
 </style>

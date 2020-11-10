@@ -1,18 +1,20 @@
 <template>
   <main class="landing-container-main">
       <ul>
-      <article class="landing-card">
+      <article class="landing-card" id="0">
           <h2> PRICING </h2>
           <p class="price-listing"> Adult:  15£ <br> Kids: 10£ </p> 
-          <p class="landing-card-bread"> Family Package up to 4:<br> 50£
+          <p class="landing-card-bread"> Family Package:<br> 50£
                entrance cost.<br> Includes 1 free meal<br> for all members 
             </p>
+            <!-- <img class="indicator" alt="indicator-icon" src="../assets/indicators/rightArrow.svg"> -->
       </article>
-      <article class="landing-card">
+      <article class="landing-card" id="1">
           <h2> OPEN HOURS </h2>
           <p class="landing-card-bread"> Mon - Wen: <br> 10 am - 4 pm </p>
           <p class="landing-card-bread">
           Weekend: <br> 10 am - 8 am </p>
+          <!-- <img class="indicator" alt="indicator-icon" src="../assets/indicators/leftArrow.svg"> -->
       </article>
       </ul>
   </main>
@@ -33,7 +35,7 @@ export default {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    grid-row: 6/10;
+    grid-row: 9/13;
     grid-column: 1/8;
     background-color: $secondary-background-colour;
     overflow: auto;
@@ -76,6 +78,7 @@ ul {
    justify-content: space-around;
    display: flex;
     width: 200%;
+    scroll-behavior: smooth;
 }
 
 .landing-card {
@@ -90,8 +93,24 @@ ul {
     transition: 0.5s;
 }
 
+.indicator {
+    height: 4rem;
+    width: 4rem;
+    position: relative;
+    display: block;
+    bottom: 0px;
+    top: 40px;
+}
+
 .landing-card:hover, .landing-card:active {
     transform: scale(1.1);
+    background-color: $btn-colour;
+}
+
+@media only screen and (min-width: 700px) {
+    .landing-container-main {
+        grid-row: 6/10;
+    }
 }
 
 @media only screen and (min-width: 750px) {
@@ -125,16 +144,24 @@ ul {
     height: 70%;
     max-width: 400px;
     }
+
+    h2 {
+        font-size: 48px;
+        }
+    .price-listing {
+        font-size: 36px;
+    }
+
+    .landing-card-bread {
+        font-size: 36px;
+    }
+
 }
 
 @media only screen and (min-width: 1700px) {
     .landing-container-main {
     grid-row: 9/15;
     }
-
-    .landing-card {
-    
-}
 
 }
 
