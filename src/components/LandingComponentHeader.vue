@@ -56,9 +56,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../styles/base.sass';
+@import '../styles/base.sass'
 
-.landing-container-header 
+.landing-container-header
     display: flex
     grid-row: 4/9
     grid-column: 1/8
@@ -77,7 +77,7 @@ export default {
     height: 50%
 
 
-.menu-item 
+.menu-item
     background-color: $secondary-card-colour
     width: 70%
     place-self: center
@@ -87,7 +87,7 @@ export default {
     flex-direction: column
     justify-content: space-around
     align-items: center
-    transition: 0.3s;
+    transition: 0.3s
 
 .menu-item:hover, menu-item:active 
     //transform: scale(1.1);
@@ -96,7 +96,7 @@ export default {
     margin: 0px
     margin-bottom: -10px
 
-.menu-item-button 
+.menu-item-button
     height: 35px
     width: 80%
     border: 0px
@@ -161,7 +161,7 @@ h3
     max-height: 100vh
     margin: auto
 
-main 
+main
     border: 1px solid red
     grid-row: 8/13
     grid-column: 2/7
@@ -170,7 +170,7 @@ main
     height: 70%
 
 
-.landing-card 
+.landing-card
     border: 1px solid black
 
 
@@ -212,8 +212,9 @@ main
         font-size: 36px
     
 
-@media only screen and (min-width: 1700px) 
-    .landing-container-header 
+
+@media only screen and (min-width: 1700px)
+    .landing-container-header
         grid-row: 5/9
 
     .icon

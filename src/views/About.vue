@@ -1,31 +1,34 @@
 <template>
-  <div class="home-wrapper">
-<div class="about">
-
-  <h1>About</h1>
-  <div class="about-box">
-    <img id="blue-parrot-pic" src="@/assets/blue-parrot.png">
-    <div class="text-box">
-      Birdhouse is a ZOO with all kind of fun activities. Do you like bird watching? We got you covered!
-      come watch our exotic parrots. Feeling hungry? Well, we got you covered there to.
-      <br>
-      <br>
-      Our foundattion helps keeping near extinct parrots from vanishing.
-      We do our best to try to educate people about the importance of having these beautiful exotic animals alive.
+<HeaderMenu />
+<div class="home-wrapper">
+  <div class="about">
+    <h1>About</h1>
+    <div class="about-box">
+      <img id="blue-parrot-pic" src="@/assets/blue-parrot.png">
+      <div class="text-box">
+        Birdhouse is a ZOO with all kind of fun activities. Do you like bird watching? We got you covered!
+        come watch our exotic parrots. Feeling hungry? Well, we got you covered there to.
+        <br>
+        <br>
+        Our foundattion helps keeping near extinct parrots from vanishing.
+        We do our best to try to educate people about the importance of having these beautiful exotic animals alive.
+      </div>
     </div>
   </div>
 </div>
-
-</div>
+<Footer/>
 </template>
 
-
 <script>
+import HeaderMenu from '@/components/HeaderMenu.vue'
+import Footer from '@/components/Footer.vue'
 import '@/styles/base.sass'
 
 export default {
   name: 'About',
-  components: {}
+  components: {
+    HeaderMenu, Footer
+  }
 }
 </script>
 
@@ -33,11 +36,17 @@ export default {
 @import '../styles/base.sass';
 
 body {
+
     background-color: $primary-background-colour;
 }
 h1 {
     color: $primary-title-colour;
     font-size: 35px;
+}
+
+.home-wrapper{
+  padding-top: 8rem;
+  height: 100vh;
 }
 
 .about {
@@ -90,8 +99,8 @@ h1 {
     #blue-parrot-pic {
         display: none;
     }
-    .home-wrapper{
-      height: 100vh;
+    .home-wrapper {
+        height: 100vh;
     }
 
 }
