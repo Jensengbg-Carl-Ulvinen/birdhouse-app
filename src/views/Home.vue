@@ -6,7 +6,7 @@
     </figure>
     <landingHeader/>
     <landingMain/>
-    <Footer class="footer"/>
+    <Footer />
   </div>
 </template>
 
@@ -32,26 +32,15 @@ header
   grid-column: 1/8
   background-color: $primary-footer-colour
 
-
 body 
     background-color: $primary-background-colour
 
 .home 
     //padding-top: 6rem;
 
-    #birdhouse-logo 
-        height: 300px
-
-@media screen and (max-width:736px) 
-
-    .home 
-        //padding-top: 6rem;
-        height: 100vh
-
-        #birdhouse-logo 
-            height: 300px
+#birdhouse-logo 
+  height: 300px
       
-
 .home 
   background-color: $primary-background-colour
   display: grid
@@ -74,35 +63,36 @@ body
   max-height: 300px
   
 
-footer 
+.footer 
   grid-row: 15/16
   grid-column: 1/8
   background-color: $primary-footer-colour
+  margin-top: 0rem
 
+@media screen and (max-width:736px) 
+  .home 
+    //padding-top: 6rem;
+    height: 100vh
+  #birdhouse-logo 
+    height: 300px
 
-  @media only screen and (min-width: 700px) 
-    footer 
-      grid-row: 12/13
+@media only screen and (min-width: 700px) 
+  .footer 
+    grid-row: 12/13
+
+@media only screen and (min-width: 1200px) 
+  .footer 
+    grid-row: 14/15
     
-  
-
-  @media only screen and (min-width: 1200px) 
-    footer 
-      grid-row: 14/15
-    
-  
-
-  @media only screen and (min-width: 1700px) 
-    footer 
-      grid-row: 17/18
+@media only screen and (min-width: 1700px) 
+  .footer 
+    grid-row: 17/18
     
 
-    .img-container 
-        grid-row: 1/5
+  .img-container 
+    grid-row: 1/5
 
-      
-
-    .logo 
-      max-height: 500px
+  .logo 
+    max-height: 500px
   
 </style>

@@ -79,7 +79,7 @@ export default {
     align-items: center
     transition: 0.3s
 
-.menu-item:hover, menu-item:active 
+.menu-item:hover, menu-item:active
     //transform: scale(1.1);
     
 .menu-item-icon 
@@ -116,7 +116,7 @@ a:hover, active
 h3
    border: 0px
    margin: 0px
-   padding: 0px 
+   padding: 0px
    width: 100%
    text-align: center
    text-decoration: none
@@ -164,45 +164,43 @@ main
     border: 1px solid black
 
 
-@media only screen and (min-width: 700px) 
-    .landing-container-header 
+@media only screen and (min-width: 700px)
+    .landing-container-header
         flex-direction: row
         grid-row: 4/6
 
-    .park-showcase 
-        display: 
+    .park-showcase
+        display:
 
-    .instant-acces-menu 
+    .instant-acces-menu
         min-width: 50%
         height: 100%
 
     .park-showcase
         height: 100%
         min-width: 50%
-    
-@media only screen and (min-width: 900px) 
-    .landing-container-header 
+
+@media only screen and (min-width: 900px)
+    .landing-container-header
         grid-column: 2/7
-    
-    
-    
-@media only screen and (min-width: 1200px) 
-    .landing-container-header 
+
+
+
+@media only screen and (min-width: 1200px)
+    .landing-container-header
         grid-row: 4/7
 
     .menu-item-button
         height: 4rem
 
-    .icon 
+    .icon
         height: 5rem
         width: 5rem
 
-@media only screen and (min-width: 1500px) 
+@media only screen and (min-width: 1500px)
      h3
         font-size: 36px
     
-
-
 @media only screen and (min-width: 1700px)
     .landing-container-header
         grid-row: 5/9
@@ -213,6 +211,6 @@ main
 
     .menu-item-button
         font-size: 36px
-    
+
 
 </style>
