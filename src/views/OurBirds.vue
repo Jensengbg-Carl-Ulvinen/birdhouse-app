@@ -131,7 +131,12 @@ audio{
 }
 }
 @media only screen and (min-width: 1200px){
-
+li:hover{
+   -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition:all 0.5s ease;
+}
 }
 @media screen and (min-width: 1400px){
  .header{
