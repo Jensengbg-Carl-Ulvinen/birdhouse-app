@@ -5,6 +5,7 @@
         <h1 class="menu-item"><router-link to="/about">About</router-link></h1>
         <h1 class="menu-item"><router-link to="/our-birds">Ourbirds</router-link></h1>
         <h1 class="menu-item"><router-link to="/food-drinks">Food and drinks</router-link></h1>
+        <h1 class="menu-item"><router-link to="/activities">Activities</router-link></h1>
       </nav>
     </section>
 </template>
