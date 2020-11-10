@@ -26,144 +26,117 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '../styles/base.sass';
+<style lang="sass" scoped>
+@import '../styles/base.sass'
 
-.landing-container-main {
-    display: grid;
-    grid-template-columns: 20px 1fr 20px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    grid-row: 9/13;
-    grid-column: 1/8;
-    background-color: $secondary-background-colour;
-    overflow: auto;
-    white-space: nowrap;
-    -webkit-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
-    -moz-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
-    box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68);
-}
+.landing-container-main 
+    display: grid
+    grid-template-columns: 20px 1fr 20px
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    grid-row: 9/13
+    grid-column: 1/8
+    background-color: $secondary-background-colour
+    overflow: auto
+    white-space: nowrap
+    -webkit-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68)
+    -moz-box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68)
+    box-shadow: inset 0px 17px 15px -3px rgba(0,0,0,0.68)
 
-h2 {
-    color: $primary-title-colour;
-    font-size: 36px;
-    font-weight: 900;
-}
+h2 
+    color: $primary-title-colour
+    font-size: 36px
+    font-weight: 900
 
-p {
-    color: $primary-bread-colour;
-    font-size: 24px;
-    font-weight: 900;
-}
+p 
+    color: $primary-bread-colour
+    font-size: 24px
+    font-weight: 900
 
-.price-listing {
-    display: flex;
-    width: 90%;
-    margin: 0px;
-    text-align: start;
-}
+.price-listing 
+    display: flex
+    width: 90%
+    margin: 0px
+    text-align: start
 
-.landing-card-bread {
-    display: flex;
-    width: 90%;
-    text-align: start;
-}
+.landing-card-bread 
+    display: flex
+    width: 90%
+    text-align: start
 
-ul {
-    height: 100%;
-   grid-column: 1/-1;
-   align-items: center;
-   padding: 0px;
-   justify-content: space-around;
-   display: flex;
-    width: 200%;
-    scroll-behavior: smooth;
-}
+ul 
+    height: 100%
+    grid-column: 1/-1
+    align-items: center
+    padding: 0px
+    justify-content: space-around
+    display: flex
+    width: 200%
+    scroll-behavior: smooth
 
-.landing-card {
-    border-radius: 5px;
-    background-color: $primary-card-colour;
-    width: 80%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    align-items: center;
-    transition: 0.5s;
-}
+.landing-card 
+    border-radius: 5px
+    background-color: $primary-card-colour
+    width: 80%
+    height: 60%
+    display: flex
+    flex-direction: column
+    max-width: 300px
+    align-items: center
+    transition: 0.5s
 
-.indicator {
-    height: 4rem;
-    width: 4rem;
-    position: relative;
-    display: block;
-    bottom: 0px;
-    top: 40px;
-}
+.landing-card:hover, .landing-card:active 
+    transform: scale(1.1)
+    background-color: $btn-colour
 
-.landing-card:hover, .landing-card:active {
-    transform: scale(1.1);
-    background-color: $btn-colour;
-}
+@media only screen and (max-width: 699px) 
+    .landing-card 
+        background-color: $btn-colour
+    
 
-@media only screen and (min-width: 700px) {
-    .landing-container-main {
-        grid-row: 6/10;
-    }
-}
+@media only screen and (min-width: 700px) 
+    .landing-container-main 
+        grid-row: 6/10
 
-@media only screen and (min-width: 750px) {
-    ul {
-        width: 100%;
-    }
-}
+@media only screen and (min-width: 750px) 
+    ul 
+        width: 100%
 
-@media only screen and (min-width: 900px) {
-    .landing-container-main {
-    grid-column: 2/7;
-    }
-    ul {
-        width: 200%;
-    }
-}
+@media only screen and (min-width: 900px) 
+    .landing-container-main 
+        grid-column: 2/7
 
-@media only screen and (min-width: 1000px) {
-    ul {
-        width: 100%;
-    }
-}
+    ul 
+        width: 200%
+    
 
-@media only screen and (min-width: 1200px) {
-    .landing-container-main {
-    grid-row: 7/12;
-    }
+@media only screen and (min-width: 1000px) 
+    ul 
+        width: 100%
 
-    .landing-card {
-    width: 80%;
-    height: 70%;
-    max-width: 400px;
-    }
+@media only screen and (min-width: 1200px) 
+    .landing-container-main 
+        grid-row: 7/12
 
-    h2 {
-        font-size: 48px;
-        }
-    .price-listing {
-        font-size: 36px;
-    }
+    .landing-card 
+        width: 80%
+        height: 70%
+        max-width: 400px
 
-    .landing-card-bread {
-        font-size: 36px;
-    }
+    h2 
+        font-size: 48px
+        
+    .price-listing 
+        font-size: 36px
+    
 
-}
+    .landing-card-bread 
+        font-size: 36px
 
-@media only screen and (min-width: 1700px) {
-    .landing-container-main {
-    grid-row: 9/15;
-    }
-
-}
+@media only screen and (min-width: 1700px) 
+    .landing-container-main 
+        grid-row: 9/15
 
 
 </style>

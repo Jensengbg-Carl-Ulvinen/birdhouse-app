@@ -1,52 +1,42 @@
 <template>
-  <header class="landing-container-header">
-      <section class="instant-acces-menu">
+    <header class="landing-container-header">
+        <section class="instant-acces-menu">
             <div class="menu-item"> 
                 <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/parrot.svg"> 
                 </figure> 
                 <button class="menu-item-button"> <router-link to="/our-birds"> <h3> BIRDS </h3> </router-link> </button> 
             </div>
-          <div class="menu-item">
+            <div class="menu-item">
               <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/wheel.svg"> 
                 </figure> 
                 <button class="menu-item-button"> <router-link to=""> <h3> PARKS </h3> </router-link> </button> 
                </div>
-          <div class="menu-item"> 
-              <figure class="menu-item-icon"> 
+            <div class="menu-item"> 
+                <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/food.svg"> 
                 </figure> 
                 <button class="menu-item-button"> <router-link to="/food-drinks"> <h3> DINING </h3> </router-link> </button> 
-          </div>
-          <div class="menu-item"> 
-              <figure class="menu-item-icon"> 
+            </div>
+            <div class="menu-item"> 
+                <figure class="menu-item-icon"> 
                     <img class="icon" alt="menu-icon" src="../assets/menu-icons/info.svg"> 
                 </figure> 
-                <button class="menu-item-button"> <router-link to="/about"> <h3> ABOUT </h3> </router-link> </button> 
+                <button class="menu-item-button"> 
+                    <router-link to="/about"> 
+                        <h3> ABOUT </h3> 
+                    </router-link> 
+                </button> 
           </div>
-      </section>
-      <section class="park-showcase">
-            <!-- <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle1.jpg"> 
-            <!-- </figure>
-            <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle2.jpg"> 
-            <!-- </figure> 
-            <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle3.jpg"> 
-            <!-- </figure> 
-            <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle4.jpg"> 
-            <!-- </figure> -->
-      </section>
-  </header>
-  <!--<main>
-      <article class="landing-card">
-      </article>
-      <article class="landing-card">
-      </article>
-  </main>-->
+        </section>
+        <section class="park-showcase">
+            <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle1.jpg"> 
+            <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle2.jpg"> 
+            <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle3.jpg"> 
+            <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle4.jpg"> 
+        </section>
+    </header>
 </template>
 
 <script>
@@ -65,7 +55,7 @@ export default {
     flex-direction: column
     background-color: $primary-footer-colour
     height: 100%
-    z-index: 1
+    //z-index: 1
 
 .instant-acces-menu 
     //min-width: 50%

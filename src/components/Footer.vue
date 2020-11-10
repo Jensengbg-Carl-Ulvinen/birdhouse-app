@@ -21,7 +21,10 @@ export default {
     align-items: flex-start;
     background: #26753C;
     width: 100%;
-    height: 6rem;
+    height: 100%;
+    min-height: 6rem;
+    grid-row: 15/16;
+    grid-column: 1/8;
 
     #red-parrot-pic {
         margin-top: -16rem;
@@ -33,4 +36,31 @@ export default {
         color: #FDE07B;
     }
 }
+
+  @media only screen and (min-width: 700px) {
+    .footer {
+      grid-row: 12/13;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .footer {
+      grid-row: 14/15;
+    }
+  }
+
+  @media only screen and (min-width: 1700px) {
+    .footer {
+      grid-row: 17/18;
+    }
+
+    .img-container {
+        grid-row: 1/5;
+
+      }
+
+    .logo {
+      max-height: 500px;
+    }
+  }
 </style>
