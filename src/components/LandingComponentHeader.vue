@@ -1,43 +1,43 @@
 <template>
   <header class="landing-container-header">
       <section class="instant-acces-menu">
-            <div class="menu-item"> 
-                <figure class="menu-item-icon"> 
-                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/parrot.svg"> 
-                </figure> 
-                <button class="menu-item-button"> <router-link to="/our-birds"> <h3> BIRDS </h3> </router-link> </button> 
+            <div class="menu-item">
+                <figure class="menu-item-icon">
+                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/parrot.svg">
+                </figure>
+                <button class="menu-item-button"> <router-link to="/our-birds"> <h3> BIRDS </h3> </router-link> </button>
             </div>
           <div class="menu-item">
-              <figure class="menu-item-icon"> 
-                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/wheel.svg"> 
-                </figure> 
-                <button class="menu-item-button"> <router-link to=""> <h3> PARKS </h3> </router-link> </button> 
+              <figure class="menu-item-icon">
+                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/wheel.svg">
+                </figure>
+                <button class="menu-item-button"> <router-link to=""> <h3> PARKS </h3> </router-link> </button>
                </div>
-          <div class="menu-item"> 
-              <figure class="menu-item-icon"> 
-                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/food.svg"> 
-                </figure> 
-                <button class="menu-item-button"> <router-link to="/food-drinks"> <h3> DINING </h3> </router-link> </button> 
+          <div class="menu-item">
+              <figure class="menu-item-icon">
+                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/food.svg">
+                </figure>
+                <button class="menu-item-button"> <router-link to="/food-drinks"> <h3> DINING </h3> </router-link> </button>
           </div>
-          <div class="menu-item"> 
-              <figure class="menu-item-icon"> 
-                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/info.svg"> 
-                </figure> 
-                <button class="menu-item-button"> <router-link to="/about"> <h3> ABOUT </h3> </router-link> </button> 
+          <div class="menu-item">
+              <figure class="menu-item-icon">
+                    <img class="icon" alt="menu-icon" src="../assets/menu-icons/info.svg">
+                </figure>
+                <button class="menu-item-button"> <router-link to="/about"> <h3> ABOUT </h3> </router-link> </button>
           </div>
       </section>
       <section class="park-showcase">
             <!-- <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle1.jpg"> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle1.jpg">
             <!-- </figure>
             <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle2.jpg"> 
-            <!-- </figure> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle2.jpg">
+            <!-- </figure>
             <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle3.jpg"> 
-            <!-- </figure> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle3.jpg">
+            <!-- </figure>
             <figure class="park-showcase-container"> -->
-                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle4.jpg"> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle4.jpg">
             <!-- </figure> -->
       </section>
   </header>
@@ -56,9 +56,9 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-@import '../styles/base.sass';
+@import '../styles/base.sass'
 
-.landing-container-header 
+.landing-container-header
     display: flex
     grid-row: 4/9
     grid-column: 1/8
@@ -67,7 +67,7 @@ export default {
     height: 100%
     z-index: 1
 
-.instant-acces-menu 
+.instant-acces-menu
     //min-width: 50%
     display: grid
     grid-template-rows: repeat(2, 3fr)
@@ -77,7 +77,7 @@ export default {
     height: 50%
 
 
-.menu-item 
+.menu-item
     background-color: $secondary-card-colour
     width: 70%
     place-self: center
@@ -89,14 +89,14 @@ export default {
     align-items: center
     transition: 0.3s;
 
-.menu-item:hover, menu-item:active 
+.menu-item:hover, menu-item:active
     //transform: scale(1.1);
-    
-.menu-item-icon 
+
+.menu-item-icon
     margin: 0px
     margin-bottom: -10px
 
-.menu-item-button 
+.menu-item-button
     height: 35px
     width: 80%
     border: 0px
@@ -126,7 +126,7 @@ a:hover, active
 h3
    border: 0px
    margin: 0px
-   padding: 0px 
+   padding: 0px
    width: 100%
    text-align: center
    text-decoration: none
@@ -140,7 +140,7 @@ h3
     background-color: $btn-font-colour
     color: $btn-colour
 
-.park-showcase 
+.park-showcase
     //width: 50%
     display: grid
     grid-template-rows: repeat(2, 3fr)
@@ -161,7 +161,7 @@ h3
     max-height: 100vh
     margin: auto
 
-main 
+main
     border: 1px solid red
     grid-row: 8/13
     grid-column: 2/7
@@ -170,50 +170,51 @@ main
     height: 70%
 
 
-.landing-card 
+.landing-card
     border: 1px solid black
 
 
-@media only screen and (min-width: 700px) 
-    .landing-container-header 
+@media only screen and (min-width: 700px)
+    .landing-container-header
         flex-direction: row
         grid-row: 4/6
 
-    .park-showcase 
-        display: 
+    .park-showcase
+        display:
 
-    .instant-acces-menu 
+    .instant-acces-menu
         min-width: 50%
         height: 100%
 
     .park-showcase
         height: 100%
         min-width: 50%
-    
-@media only screen and (min-width: 900px) 
-    .landing-container-header 
+
+@media only screen and (min-width: 900px)
+    .landing-container-header
         grid-column: 2/7
-    
-    
-    
-@media only screen and (min-width: 1200px) 
-    .landing-container-header 
+
+
+
+@media only screen and (min-width: 1200px)
+    .landing-container-header
         grid-row: 4/7
 
     .menu-item-button
         height: 4rem
 
-    .icon 
+    .icon
         height: 5rem
         width: 5rem
 
-@media only screen and (min-width: 1500px) 
+@media only screen and (min-width: 1500px)
      h3
         font-size: 36px
-    
 
-@media only screen and (min-width: 1700px) 
-    .landing-container-header 
+
+
+@media only screen and (min-width: 1700px)
+    .landing-container-header
         grid-row: 5/9
 
     .icon
@@ -222,6 +223,6 @@ main
 
     .menu-item-button
         font-size: 36px
-    
+
 
 </style>
