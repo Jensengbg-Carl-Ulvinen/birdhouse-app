@@ -45,6 +45,7 @@ h1 {
 }
 
 .home-wrapper{
+  padding-top: 8rem;
   height: 100vh;
 }
 

@@ -1,4 +1,5 @@
 <template>
+  <HeaderMenu/>
 <div class="food">
   <h1>Food and Drinks</h1>
   <div class="container">
@@ -14,12 +15,17 @@
 <h2>ICE CREAM</h2>
   </div>
 </div>
-
+<Footer/>
 </template>
 
 <script>
+import HeaderMenu from '@/components/HeaderMenu.vue'
+import Footer from '@/components/Footer.vue'
 export default {
     name: 'FoodDrinks',
+    components: {
+      HeaderMenu, Footer
+    }
 
 
 }
@@ -34,7 +40,7 @@ export default {
   grid-gap: 1.25rem;
   grid-template-rows: repeat(3,1fr);
   justify-content: space-around;
-  
+
 }
 
 h1 {
@@ -42,7 +48,7 @@ h1 {
   display: flex;
   align-self: center;
   justify-self: center;
-  
+
 }
 
 
@@ -55,9 +61,9 @@ h1 {
   grid-row: 2;
   display: grid;
   justify-content: center;
-  
-  
-  
+
+
+
 }
 
 .container:hover {opacity: 1}
@@ -80,7 +86,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
   }
 
 
@@ -88,7 +94,7 @@ img {
     align-self: center;
     width: 20rem;
     height: 20rem;
-  
+
   }
 }
 
