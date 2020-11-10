@@ -87,6 +87,11 @@ ul {
     flex-direction: column;
     max-width: 300px;
     align-items: center;
+    transition: 0.5s;
+}
+
+.landing-card:hover, .landing-card:active {
+    transform: scale(1.1);
 }
 
 @media only screen and (min-width: 750px) {

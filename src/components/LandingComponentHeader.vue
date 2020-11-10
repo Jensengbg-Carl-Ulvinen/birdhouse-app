@@ -27,6 +27,18 @@
           </div>
       </section>
       <section class="park-showcase">
+            <figure class="park-showcase-container"> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle1.jpg"> 
+            </figure> 
+            <figure class="park-showcase-container"> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle2.jpg"> 
+            </figure> 
+            <figure class="park-showcase-container"> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle3.jpg"> 
+            </figure> 
+            <figure class="park-showcase-container"> 
+                <img class="park-picture" alt="park-picture" src="../assets/park-showcase/jungle4.jpg"> 
+            </figure> 
       </section>
   </header>
   <!--<main>
@@ -72,6 +84,10 @@ export default {
     flex-direction: column
     justify-content: space-around
     align-items: center
+    transition: 0.3s;
+
+.menu-item:hover, menu-item:active 
+    transform: scale(1.1);
     
 .menu-item-icon 
     margin: 0px
@@ -85,18 +101,29 @@ export default {
     color: $btn-font-colour
     font-size: 24px
 
+.menu-item-button:hover, active
+    cursor: pointer
+
 .menu-item-button:hover
     background-color: $btn-font-colour
     color: $btn-colour
 
 
 .park-showcase 
-    border: 1px solid white
     width: 50%
     display: grid
     grid-template-rows: repeat(2, 3fr)
     grid-template-columns: repeat(2, 3fr)
 
+.park-showcase-container
+    object-fit: contain;
+    padding: 0px;
+    margin: 0px;
+
+.park-picture
+    width: 100%
+    height: 100%
+    object-fit: cover
 
 main 
     border: 1px solid red
