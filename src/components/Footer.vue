@@ -15,6 +15,7 @@ export default {
 @import '@/styles/base.sass';
 
 .footer {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,6 +23,9 @@ export default {
     background: #26753C;
     width: 100%;
     height: 6rem;
+    margin-top: 5rem;
+    z-index: 9999;
+    position: absolute;
 
     #red-parrot-pic {
         margin-top: -16rem;
@@ -32,5 +36,14 @@ export default {
         padding-left: 1rem;
         color: #FDE07B;
     }
+}
+
+@media screen and (max-width:736px) {
+
+  .footer{
+    margin-top: 15rem!important;
+  }
+
+
 }
 </style>
