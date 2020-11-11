@@ -1,5 +1,5 @@
 <template>
-  <HeaderMenu/>
+<HeaderMenu/>
 <div class="food">
   <h1>Food and Drinks</h1>
   <div class="container">
@@ -16,6 +16,7 @@
   </div>
 </div>
 <Footer/>
+
 </template>
 
 <script>
@@ -26,8 +27,6 @@ export default {
     components: {
       HeaderMenu, Footer
     }
-
-
 }
 </script>
 
@@ -48,6 +47,9 @@ h1 {
   display: flex;
   align-self: center;
   justify-self: center;
+  text-shadow: 0.125rem 0.125rem 0.25rem #000000;
+  font-family: $font-title;
+  color: $btn-font-colour;
 
 }
 
@@ -61,17 +63,32 @@ h1 {
   grid-row: 2;
   display: grid;
   justify-content: center;
+  box-shadow: 0.4375rem 0.4375rem;
+  border-radius: 1.5625rem;
 
 
 
 }
 
-.container:hover {opacity: 1}
+.container:hover {
+  opacity: 1;
+  transform: scale(1.2);
+
+
+  }
 
 img {
   width: 12.5rem;
   height: 12.5rem;
   margin-top: 1.25rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem;
+}
+
+h2 {
+  text-shadow: 0.125rem 0.125rem 0.25rem #000000;
+  color: $primary-title-colour;
+  font-family: $font-title;
 }
 
 
