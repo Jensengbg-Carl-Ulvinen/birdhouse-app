@@ -111,7 +111,7 @@ audio{
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .ourbirds{
-  grid-template-columns: 1fr;
+  // grid-template-columns: 1fr;
   grid-template-rows: 0.5fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -126,8 +126,11 @@ audio{
   }
 .card-our-birds{
   display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  flex-direction: column;
+  z-index: -1;
+  li{
+    margin: 1rem;
+  }
 }
 }
 @media only screen and (min-width: 1200px){

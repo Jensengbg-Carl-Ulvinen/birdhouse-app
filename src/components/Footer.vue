@@ -21,7 +21,8 @@ export default {
     align-items: flex-start;
     background: #26753C;
     width: 100%;
-    height: 6rem;
+    height: 100%;
+    min-height: 6rem;
 
     #red-parrot-pic {
         margin-top: -16rem;
@@ -32,5 +33,17 @@ export default {
         padding-left: 1rem;
         color: #FDE07B;
     }
+}
+
+@media screen and (max-width:736px) {
+
+  .footer{
+    margin-top: 15rem!important;
+    #red-parrot-pic {
+        display: none;
+    }
+  }
+
+
 }
 </style>
