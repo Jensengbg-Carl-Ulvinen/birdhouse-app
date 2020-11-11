@@ -15,17 +15,14 @@ export default {
 @import '@/styles/base.sass';
 
 .footer {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     background: #26753C;
     width: 100%;
-    height: 6rem;
-    margin-top: 5rem;
-    z-index: 9999;
-    position: absolute;
+    height: 100%;
+    min-height: 6rem;
 
     #red-parrot-pic {
         margin-top: -16rem;
