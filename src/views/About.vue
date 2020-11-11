@@ -40,8 +40,7 @@ export default {
 
 .home-wrapper {
   display: grid;
-  grid-gap: .25rem;
-  grid-template-rows: repeat(1,1fr);
+  grid-template-rows: repeat(1, 1fr);
   justify-content: space-around;
     h1 {
         color: $primary-title-colour;
@@ -54,7 +53,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 6rem;
+    padding-bottom: 11rem;
     .about-box {
         width: 1200px auto;
         height: 450px;
