@@ -48,6 +48,8 @@ h1 {
   align-self: center;
   justify-self: center;
   text-shadow: 0.125rem 0.125rem 0.25rem #000000;
+  font-family: $font-title;
+  color: $btn-font-colour;
 
 }
 
@@ -85,6 +87,8 @@ img {
 
 h2 {
   text-shadow: 0.125rem 0.125rem 0.25rem #000000;
+  color: $primary-title-colour;
+  font-family: $font-title;
 }
 
 
